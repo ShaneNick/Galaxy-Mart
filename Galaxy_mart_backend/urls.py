@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signup/v1/', include('users.urls')),  # Include the users app's URLs under the specified path
+    path('signup/v1/', include('users.urls')),  
+    path('inventory/', include('products.urls')),
 ]
